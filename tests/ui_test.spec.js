@@ -12,8 +12,14 @@ test("Ui test assignment ", async ({ page }) => {
     await loginPage.signIn()
 
 
+
     const dashboardPage = new DashboardPage(page)
     await dashboardPage.issuesSection()
-    await dashboardPage.severitySection()
-    await dashboardPage.getSevrityIssuesCount()
+    await dashboardPage.searchIsuueName()
+
+
+    //     await dashboardPage.severitySection()
+    //     await dashboardPage.getSevrityIssuesCount()
 })
+
+
